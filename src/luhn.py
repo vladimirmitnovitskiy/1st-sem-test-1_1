@@ -13,5 +13,17 @@ def luhnCheck(cardNumber):
             total += digits[i]
     return (total + control) % 10 == 0
 
+userInput = 0
+try:
+    userInput = int(input())
+    if userInput == -1:
+        pass
+
+    else:
+        print(luhnCheck(userInput))
+
+
+except ValueError:
+        print('Неверно введён номер карты')
 
 

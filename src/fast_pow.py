@@ -1,4 +1,6 @@
 def fastPow(number, power):
+    if power == 0:
+        return 1
     result = 1
     flag = 0
     if power < 0:
@@ -12,4 +14,6 @@ def fastPow(number, power):
     if flag == 1:
         return (f"1/{result}")
     return result
+
+
 
